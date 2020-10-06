@@ -7,7 +7,7 @@ install:
 # command to run tests
 script:
   # run tests to check pep8 style guides
-  - flake8 pytiny/__init__.py
-  - flake8 tests/test.py
+  - flake8 pytiny/ --exit-zero
+  - flake8 tests/ --exit-zero
   # run unit tests
   - python tests/test.py
