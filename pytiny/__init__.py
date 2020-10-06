@@ -8,7 +8,7 @@ class PyTiny(object):
         self.db = {}
 
     def bring(self, location):
-        """Import a file. This will be delete all data stored before, 
+        """Import a file. This will be delete all data stored before,
         and will be restore the new data from the file."""
         name = f"{location}.db"
         with open(name, "r") as f:
