@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+# command to run tests
+script:
+  # run tests to check pep8 style guides
+  - flake8 pytiny/__init__.py
+  - flake8 tests/test.py
+  # run unit tests
+  - python tests/test.py
