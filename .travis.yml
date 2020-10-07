@@ -1,6 +1,5 @@
 language: python
 python:
-  - "3.5"
   - "3.6"
   - "3.7"
 # command to set python path
@@ -16,3 +15,6 @@ script:
   - flake8 . --exit-zero
   # run unit tests
   - python3 tests.py
+  # anible playbook syntax check
+  - ansible-playbook playbooks/*.yml  --syntax-check
+  # ansible-playbook -i hosts playbooks/playbook.yml
