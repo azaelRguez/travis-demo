@@ -2,6 +2,8 @@
 
 A copy of PyTiny to use with TravisCI
 
+[![Build Status](https://travis-ci.com/azaelRguez/travis-demo.svg?branch=main)](https://travis-ci.com/azaelRguez/travis-demo)
+
 ## Set up
 
 ```code

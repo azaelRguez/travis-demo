@@ -15,6 +15,13 @@ script:
   - flake8 . --exit-zero
   # run unit tests
   - python3 tests.py
-  # anible playbook syntax check
+  # ansible playbook syntax check
   - ansible-playbook playbooks/*.yml  --syntax-check
   # ansible-playbook -i hosts playbooks/playbook.yml
+# Send notifications
+notifications:
+  email:
+    recipients:
+      - azael.rguez96@gmail.com
+    on_success: always
+    on_failure: always
